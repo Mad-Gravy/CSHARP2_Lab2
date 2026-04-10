@@ -1,0 +1,15 @@
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\bin\Debug\net5.0\StringReverseStack.exe
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\bin\Debug\net5.0\StringReverseStack.deps.json
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\bin\Debug\net5.0\StringReverseStack.runtimeconfig.json
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\bin\Debug\net5.0\StringReverseStack.runtimeconfig.dev.json
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\bin\Debug\net5.0\StringReverseStack.dll
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\bin\Debug\net5.0\StringReverseStack.pdb
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\StringReverseStack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\StringReverseStack.AssemblyInfoInputs.cache
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\StringReverseStack.AssemblyInfo.cs
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\StringReverseStack.csproj.CoreCompileInputs.cache
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\StringReverseStack.dll
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\refint\StringReverseStack.dll
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\StringReverseStack.pdb
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\StringReverseStack.genruntimeconfig.cache
+C:\Users\grave\Desktop\CS162N_CSHARP2\Lab2\datastructureslab_master\DataStructures_Core5\StringReverseStack\obj\Debug\net5.0\ref\StringReverseStack.dll
