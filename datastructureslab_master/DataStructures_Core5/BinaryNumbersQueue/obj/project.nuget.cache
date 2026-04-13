@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zYSyBmyxvzs=",
+  "dgSpecHash": "uQBCbJt83M8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\datastructureslab_master\\DataStructures_Core5\\BinaryNumbersQueue\\BinaryNumbersQueue.csproj",
+  "projectFilePath": "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\CSHARP2_Lab2\\datastructureslab_master\\DataStructures_Core5\\BinaryNumbersQueue\\BinaryNumbersQueue.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\grave\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
     "C:\\Users\\grave\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",

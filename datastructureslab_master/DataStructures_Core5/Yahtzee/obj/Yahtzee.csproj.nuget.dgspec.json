@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\Yahtzee.csproj": {}
+    "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\CSHARP2_Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\Yahtzee.csproj": {}
   },
   "projects": {
-    "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\Yahtzee.csproj": {
+    "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\CSHARP2_Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\Yahtzee.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\Yahtzee.csproj",
+        "projectUniqueName": "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\CSHARP2_Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\Yahtzee.csproj",
         "projectName": "Yahtzee",
-        "projectPath": "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\Yahtzee.csproj",
+        "projectPath": "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\CSHARP2_Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\Yahtzee.csproj",
         "packagesPath": "C:\\Users\\grave\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\obj\\",
+        "outputPath": "C:\\Users\\grave\\Desktop\\CS162N_CSHARP2\\Lab2\\CSHARP2_Lab2\\datastructureslab_master\\DataStructures_Core5\\Yahtzee\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net5.0": {
@@ -84,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
