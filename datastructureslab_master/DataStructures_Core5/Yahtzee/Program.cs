@@ -208,14 +208,25 @@ namespace Yahtzee
                 if (scorecard[i] == -1)
                 {
                     int score = Score(i, keeping);
-                    if (score >= max)
+
+                    if (i == YAHTZEE) // adding weight to consideration of rare scoring options. 
+                        score += 12;                   // Stole this idea off a google search so I probably shouldn't get the extra credit lol
+                    else if (i == LARGE_STRAIGHT)
+                        score += 9;
+                    else if (i == SMALL_STRAIGHT)
+                        score += 6;
+                    else if (i == FULL_HOUSE)
+                        score += 3;
+                    else if (i == CHANCE)
+                        score += -2; // removing weight from consideration of chance so it might get saved for a bad roll later
+
+                    if (score > max)
                     {
                         max = score;
                         indexOfMax = i;
                     }
                 }
             }
-            
 
             return indexOfMax;
         }
