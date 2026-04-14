@@ -57,15 +57,18 @@ namespace Yahtzee
                 {
                     Console.WriteLine("It is your turn.");
                     Console.ReadLine();
-                    UserPlay(ref userScorecard, ref userTurnCount);
+                    UserPlay(userScorecard, ref userTurnCount);
                 }
                 else
                 {
                     Console.WriteLine("It is the computer's turn.");
-                    ComputerPlay(ref compScorecard, ref compTurnCount);
+                    ComputerPlay(compScorecard, ref compTurnCount);
+
+                    Console.WriteLine("Press Enter to continue...");
+                    Console.ReadLine(); // Wanted a pause here so I could see the computer's dice and compare to its scoring choice.
                 }
 
-            } while (userTurnCount <= 13 && compTurnCount <= 13);
+            } while (userTurnCount < 13 && compTurnCount < 13);
 
             UpdateScorecard(userScorecard);
             UpdateScorecard(compScorecard);
@@ -220,7 +223,7 @@ namespace Yahtzee
         // implements the computer's turn.  The computer only rolls once.
         // You can earn extra credit for making the computer play smarter
         // takes the computer's scorecard data structure and scorecard count as parameters.  Both are altered by the method.
-        static void ComputerPlay(ref int[] cScorecard, ref int compTurnCount)
+        static void ComputerPlay(int[] cScorecard, ref int compTurnCount)
         {
             /* you can uncomment this code once you declare the parameters
             declare a data structure for the dice that the computer is keeping.  Call it keeping.*/
@@ -247,18 +250,29 @@ namespace Yahtzee
         // takes the rolling data structure and the keeping data structure as parameters
         static void GetKeeping(List<int> rolling, List<int> keeping)
         {
-            Console.WriteLine("Choose which dice to keep by position, 1-5, and your chosen dice will not be rerolled. Enter a zero/0 to stop choosing.");
+            List<int> choices = new List<int>();
+
+            Console.WriteLine("Choose which dice to keep by position, 1-5. Enter 0 when done.");
 
             while (true)
             {
-                Console.Write("Which one will you keep? (Enter a '0' to keep the remaining dice). ");
+
+                Console.Write("Which one will you keep? (Enter 0 to stop choosing.) ");
                 int choice = int.Parse(Console.ReadLine());
 
                 if (choice == 0)
                     break;
 
-                keeping.Add(rolling[choice - 1]);
-                rolling.RemoveAt(choice - 1);
+                choices.Add(choice - 1);
+            }
+
+            choices.Sort();
+            choices.Reverse();
+
+            foreach (int index in choices)
+            {
+                keeping.Add(rolling[index]);
+                rolling.RemoveAt(index);
             }
         }
 
@@ -286,9 +300,11 @@ namespace Yahtzee
             do
             {
                 Console.WriteLine("Scoring Options:");
-                Console.WriteLine("|| 1. Ones || 2. Twos || 3. Threes || 4. Fours || 5. Fives || 6. Sixes || 7. Three-of-a-Kind ||");
-                Console.WriteLine("|| 8. Four-of-a-Kind || 9. Full House || 10. Small Straight || 11. Large Straight || 12. Chance || 13. Yahtzee ||");
-                Console.WriteLine("How would you like to score this hand? (Type the number next to the scoring option.)");
+                Console.WriteLine("|| 1. Ones || 2. Twos || 3. Threes || 4. Fours || 5. Fives || 6. Sixes ||");
+                Console.WriteLine("|| 7. Three-of-a-Kind || 8. Four-of-a-Kind || 9. Full House ||");
+                Console.WriteLine("|| 10. Small Straight || 11. Large Straight || 12. Chance || 13. Yahtzee ||");
+                Console.WriteLine("How would you like to score this hand? (Type the number next to the scoring option.)"); 
+                // For Prof Stewart: Was there a better way to do this? I feel like there was a simpler way and I just couldn't quite figure it out. Something about the global constants maybe?
 
                 choice = int.Parse(Console.ReadLine());
 
@@ -308,7 +324,7 @@ namespace Yahtzee
 
         // implments the user's turn
         // takes the user's scorecard data structure and the user's move count as parameters.  Both will be altered by the method.
-        static void UserPlay(ref int[] uScorecard, ref int userTurnCount)
+        static void UserPlay(int[] uScorecard, ref int userTurnCount)
         {
             List<int> rolling = new List<int>();
             List<int> keeping = new List<int>();
@@ -318,6 +334,7 @@ namespace Yahtzee
 
             do
             {
+                rolling.Clear();
                 Roll(5 - keeping.Count, rolling);
                 rollCount++;
 
@@ -335,6 +352,7 @@ namespace Yahtzee
                     MoveRollToKeep(rolling, keeping);
                 }
 
+                Console.WriteLine("The dice you kept: ");
                 DisplayDice(keeping);
             } while (rollCount < 3 && keeping.Count < 5);
 
@@ -567,7 +585,6 @@ namespace Yahtzee
                     return 0;
             }
             
-            return 0;
         }
 
         #endregion
